@@ -1,0 +1,121 @@
+.main {
+  margin-left: 120px;
+}
+.title {
+  font-weight: 800;
+  margin: 30px 0px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.title h4 {
+  width: 120px;
+}
+.title div {
+  height: 1.5px;
+  background-color: #c3b9b9;
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+.info {
+  width: 450px;
+}
+.wrapper {
+  color: #7d7789;
+}
+.wrapper li {
+  margin-bottom: 8px;
+}
+.first {
+  display: inline-block;
+  font-weight: 800;
+  width: 100px;
+}
+.second {
+  color: #7d7789;
+}
+.programming {
+  width: 450px;
+}
+.border {
+  height: 0.12em;
+  width: 100%;
+  background-color: #c3b9b9;
+  position: relative;
+}
+.border span {
+  position: absolute;
+  height: 0.12em;
+  background-color: #7d7789;
+}
+.inlineProgrammingName {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.language {
+  width: 450px;
+  height: 300px;
+}
+.language li {
+ margin-right: 10px;
+}
+.language ul {
+  display: flex;
+}
+.listInner {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.myCircle {
+  position: relative;
+  float: left;
+}
+
+:root {
+  --size: 80px;
+  --bord: 5px;
+}
+.circle {
+  width: var(--size);
+  height: var(--size);
+  margin: 1em auto;
+  border-radius: 50%;
+  background-image: conic-gradient(#7d7789 var(--value), lightgrey var(--value));
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lang {
+ width: 80px;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--bord));
+  height: calc(100% - var(--bord));
+  background: white;
+  border-radius: inherit;
+}
+.num1 {
+  --value: 95%;
+}
+.num2 {
+  --value: 85%;
+}
+.num3 {
+  --value: 75%;
+}

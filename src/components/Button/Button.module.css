@@ -1,0 +1,17 @@
+.button button {
+  color: #fff;
+  display: inline-block;
+  background-color: #333;
+  padding: 13px 38px;
+  border: 1px solid #333;
+  font-weight: 500;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.button button:hover {
+  background-color: #f6fbff;
+  color: #333;
+}
