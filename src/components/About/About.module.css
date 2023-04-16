@@ -1,5 +1,4 @@
 .main {
-  margin-left: 120px;
 }
 .title {
   font-weight: 800;
@@ -8,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 .title h4 {
   width: 120px;
@@ -18,9 +16,6 @@
   background-color: #c3b9b9;
   transform: translateY(-50%);
   margin-left: 30px;
-}
-.info {
-  width: 450px;
 }
 .wrapper {
   color: #7d7789;
@@ -36,9 +31,7 @@
 .second {
   color: #7d7789;
 }
-.programming {
-  width: 450px;
-}
+
 .border {
   height: 0.12em;
   width: 100%;
@@ -55,15 +48,12 @@
   justify-content: space-between;
   margin: 8px 0px;
 }
-.language {
-  width: 450px;
-  height: 300px;
-}
 .language li {
- margin-right: 10px;
+  margin-right: 10px;
 }
 .language ul {
   display: flex;
+  justify-content: space-around;
 }
 .listInner {
   width: 100%;
@@ -74,7 +64,6 @@
   position: relative;
   float: left;
 }
-
 :root {
   --size: 80px;
   --bord: 5px;
@@ -84,7 +73,10 @@
   height: var(--size);
   margin: 1em auto;
   border-radius: 50%;
-  background-image: conic-gradient(#7d7789 var(--value), lightgrey var(--value));
+  background-image: conic-gradient(
+    #7d7789 var(--value),
+    lightgrey var(--value)
+  );
   position: relative;
   display: flex;
   justify-content: center;
@@ -97,7 +89,7 @@
   transform: translate(-50%, -50%);
 }
 .lang {
- width: 80px;
+  width: 80px;
 }
 .circle::after {
   content: "";

@@ -8,6 +8,7 @@ body {
   color: #7d7789;
   font-weight: 300;
   font-size: 14px;
+  overflow: hidden;
   overflow-y: scroll;
 }
 

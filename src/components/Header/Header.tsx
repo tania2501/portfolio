@@ -17,7 +17,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/about"
+              to="/About"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }
@@ -27,7 +27,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/portfolio"
+              to="/Portfolio"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }
@@ -37,7 +37,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/contact"
+              to="/Contact"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }

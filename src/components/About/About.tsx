@@ -133,7 +133,6 @@ export const About = () => {
             </li>
           </ul>
         </div>
-        <div className={s.education}></div>
       </div>
     </div>
   );

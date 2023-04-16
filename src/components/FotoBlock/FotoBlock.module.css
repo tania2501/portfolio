@@ -1,8 +1,16 @@
 .fotoBlock {
-  grid-area: n;
-}
-.personalFoto img {
-  max-height: 900px;
-  max-width: 500px;
+  grid-area: n; 
+  background-image: url('./../../assets/img/foto3.jpg');
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 33.33%;
   position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.personalFoto  {
+ 
+
 }

@@ -17,10 +17,10 @@ function App() {
       <div className="app-wrapper-content">
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/Home' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/Portfolio' element={<Portfolio/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
         </Routes>
       </div>
       <Footer/>

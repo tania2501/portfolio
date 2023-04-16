@@ -6,12 +6,15 @@
     "h h"
     "n c"
     "f f";
-  width: 1200px;
+  width: 80%;
   min-height: 100vh;
   margin: 0 auto;
 }
 .app-wrapper-content {
   grid-area: c;
   background-color: #f6fbff;
-
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  justify-content: center;
 }
