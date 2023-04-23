@@ -5,13 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+}
+.main {
+  margin-bottom: 100px;
 }
 .title h4 {
   width: 120px;
 }
 .title div {
   height: 1.5px;
+  width: 400px;
   background-color: #c3b9b9;
   transform: translateY(-50%);
   margin-left: 30px;
@@ -19,27 +22,27 @@
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 .blockItem a {
   display: block;
   color: #c3b9b9;
-  font-size: 12px;
 }
 .blockItem {
   text-align: center;
   border: 1px solid #c3b9b9;
   padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 .form {
-  max-width: 443px;
+  max-width: 643px;
 }
 .input {
+  display: block;
   font-size: 12px;
   font-weight: 300;
-  max-width: 351px;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 20px;
   outline: none;
@@ -54,6 +57,41 @@
   background: transparent;
   border: 0;
   border-bottom: 1px solid #c3b9b9;
-  width: 400px;
+  max-width: 500px;
+  width: 80%;
   height: 100px;
 }
+@media (max-width: 1400px) {
+  .blocks {
+    justify-content: space-around;
+    margin-right: 0;
+  }
+  .title div {
+    width: 350px;
+  }
+  .main {
+    padding: 20px;
+  }
+}
+@media (max-width: 1350px) {
+  .blocks {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  .title div {
+    width: 300px;
+  }
+  .main {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .title div {
+    width: 200px;
+  }
+  .main {
+    font-size: 14px;
+  }
+}
+

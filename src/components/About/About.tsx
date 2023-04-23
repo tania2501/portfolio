@@ -8,7 +8,7 @@ export const About = () => {
         <div className={s.info}>
           <div className={s.title}>
             <h4>ABOUT ME</h4>
-            <div style={{ width: "300px" }}></div>
+            <div></div>
           </div>
           <div className={s.wrapper}>
             <ul>
@@ -46,7 +46,7 @@ export const About = () => {
         <div className={s.programming}>
           <div className={s.title}>
             <h4>PROGRAMMING</h4>
-            <div style={{ width: "290px" }}></div>
+            <div></div>
           </div>
           <div className={s.programmingName}>
             <div className={s.inlineProgrammingName}>
@@ -84,7 +84,7 @@ export const About = () => {
         <div className={s.language}>
           <div className={s.title}>
             <h4>Language</h4>
-            <div style={{ width: "350px" }}></div>
+            <div></div>
           </div>
           <ul>
             <li>

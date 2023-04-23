@@ -14,5 +14,14 @@
 }
 .button button:hover {
   background-color: #f6fbff;
+  color: #333!;
+}
+.button a {
+  color: #fff;
+}
+.button button:hover a{
+  color: #333;
+}
+.button a:active {
   color: #333;
 }

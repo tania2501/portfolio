@@ -10,7 +10,7 @@ export const Contact = () => {
     <div className={s.main}>
       <div className={s.title}>
         <h4>GET IN TOUCH</h4>
-        <div style={{ width: "290px" }}></div>
+        <div></div>
       </div>
       <div className={s.blocks}>
         <div className={s.blockItem}>
@@ -50,8 +50,11 @@ export const Contact = () => {
           className={s.text}
           placeholder="Message"
         ></textarea>
-       <Button title={"Send message"} onClick={()=>{}}/>
+       <Button title={"Send message"}/>
       </form>
+      <div className={s.map}>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21279.661971545574!2d17.1350712!3d48.1881656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2ssk!4v1682246248789!5m2!1sru!2ssk" width="100%" height="300"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   );
 };

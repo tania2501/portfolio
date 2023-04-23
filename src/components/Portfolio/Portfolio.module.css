@@ -1,15 +1,19 @@
+.portfolio {
+  width: 85%;
+  margin-bottom: 100px;
+}
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 .mainItem {
   position: relative;
 }
 .item {
-  width: 200px;
-  height: 120px;
+  width: 300px;
+  height: 220px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 20px auto;
@@ -32,9 +36,11 @@
   background-color: #c3b9b9;
   transform: translateY(-50%);
   margin-left: 30px;
+  width: 590px;
 }
 .main a {
   color: #7d7789;
+  font-weight: 700;
 }
 .overlay {
 	top: 20px;
@@ -43,12 +49,19 @@
 	right: 0;
 	cursor: pointer;
 	position: absolute;
-	width: 200px;
-	height: 120px;
+	width: 300px;
+	height: 220px;
 	opacity: 0;
 	transition: 0.5s ease;
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../assets/img-folder/arrow-32-24.png') no-repeat center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 	border-radius: 15px;
+}
+.overlay img {
+  position: absolute;
+  top: 35%;
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
 }
 .mainItem:hover .overlay { 
 	opacity: 1;
@@ -57,4 +70,25 @@
   font-size: 16px;
   font-weight: 500;
   color: #000
+}
+@media (max-width: 1500px) {
+  .title div {
+    width: 400px;
+  }
+  .main {
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .title div {
+    width: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .title div {
+    width: 500px;
+  }
+  .main {
+    justify-content: space-around;
+  }
 }
