@@ -10,7 +10,7 @@ export const Button = (props: ButtonPropsType)=> {
   return (
     <div className={s.button}>
       {props.title === "Get in touch" ? <button><NavLink to={"/portfolio/Contact"}>{props.title}</NavLink></button> 
-        : <button>{props.title}</button>
+        : <button disabled={true}>{props.title}</button>
       }
     </div>
   )

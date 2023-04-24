@@ -4,7 +4,7 @@ import social from "../../assets/img-folder/social.jpg";
 import todo from "../../assets/img-folder/to-do-list.jpg";
 import count from "../../assets/img-folder/counter.jpg";
 import wom from "../../assets/img-folder/womaizing.jpg";
-import arr from "./../../assets/img-folder/arrow-2-32.png";
+import arr from "./../../assets/img-folder/arrow-31-32.png";
 
 export const Portfolio = () => {
   return (
