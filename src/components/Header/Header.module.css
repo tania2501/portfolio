@@ -64,8 +64,20 @@
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
+.foto {
+  display: none;
+  background-image: url('./../../assets/img/foto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 35%;
+  margin: 0 auto;
+}
 @media (max-width: 992px) {
+  .foto {
+    display: block;
+  }
   .header {
     justify-content: center;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -90,7 +102,7 @@
   }
  
   .item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .hamburger {
@@ -100,5 +112,10 @@
   }
   .container {
     margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  .foto {
+    height: 25%;
   }
 }

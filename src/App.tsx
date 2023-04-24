@@ -16,11 +16,11 @@ function App() {
         <Header />
         <div className="mobileContent">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Portfolio" element={<Portfolio />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio/Home" element={<Home />} />
+            <Route path="/portfolio/About" element={<About />} />
+            <Route path="/portfolio/Portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/Contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
@@ -30,11 +30,11 @@ function App() {
         <FotoBlock />
         <div className="app-wrapper-content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Portfolio" element={<Portfolio />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio/Home" element={<Home />} />
+            <Route path="/portfolio/About" element={<About />} />
+            <Route path="/portfolio/Portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/Contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

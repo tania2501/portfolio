@@ -13,9 +13,10 @@ export const Header = () => {
       <div className={s.container}>
         <h2>PORTFOLIO</h2>
         <nav className={s.navmenu + " " + (menu ? s.active : "")}>
+          <div className={s.foto}></div>
           <div className={s.item}>
             <NavLink
-              to="/"
+              to="/portfolio/"
               className={({ isActive }) => (isActive ? s.activeLink : "")}
               onClick={() => setMenu(false)}
             >
@@ -24,7 +25,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/About"
+              to="/portfolio/About"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }
@@ -35,7 +36,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/Portfolio"
+              to="/portfolio/Portfolio"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }
@@ -46,7 +47,7 @@ export const Header = () => {
           </div>
           <div className={s.item}>
             <NavLink
-              to="/Contact"
+              to="/portfolio/Contact"
               className={({ isActive }) =>
                 isActive ? s.activeLink : undefined
               }
