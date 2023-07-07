@@ -1,31 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./Contact.module.css";
 import phone from "./../../assets/icon/phone.png";
 import local from "./../../assets/icon/pin.png";
 import mail from "./../../assets/icon/forward.png";
 import { Button } from "../Button/Button";
 import { useForm } from "react-hook-form";
-import axios from "axios";
-type DataFormType = {
+import { sendMessage } from "../api/api";
+import { toast } from "react-toastify";
+
+export type DataFormType = {
   name: string;
   email: string;
   phone: number;
   message: string;
 };
 export const Contact = () => {
-  const [message, setMessage] = useState<null | string>(null)
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors, isValid },
   } = useForm<DataFormType>({mode: "onChange"});
-  const onSubmit = handleSubmit((data) => {
-    axios.post('https://email-node-js.vercel.app/sendMessage', data).then((res) => {
-      setMessage('Your message has been sent successfully!');
-      setMessage('')
+  const onSubmit = handleSubmit(async (data) => {
+    sendMessage(data).then((res) => {
+      toast.success(res.data.message) 
+    }).catch((e) => {
+      toast.error(e)
     })
-    console.log(data);
+    reset()
   });
   return (
     <div className={s.main}>
@@ -36,7 +38,7 @@ export const Contact = () => {
       <div className={s.blocks}>
         <div className={s.blockItem}>
           <img src={local} alt="#" />
-          <a href="#">Bratislava, Slovakia</a>
+          <a href="https://www.google.com/maps/place/Bratislava/@48.1356952,16.9758341,11z/data=!3m1!4b1!4m6!3m5!1s0x476c89360aca6197:0x631f9b82fd884368!8m2!3d48.1485965!4d17.1077478!16zL20vMDE1Zzc?entry=ttu">Bratislava, Slovakia</a>
         </div>
         <div className={s.blockItem}>
           <img src={mail} alt="#" />
@@ -82,18 +84,17 @@ export const Contact = () => {
         />
         <textarea
           {...register('message')}
-          name="massage"
+          name="message"
           className={s.text}
           placeholder="Message"
         ></textarea>
-        <div style={{display: 'flex'}}>
+        <div>
           <Button title={"Send message"} isValid={isValid}/>
-          <div>{message}</div>
         </div>
         
       </form>
       <div className={s.map}>
-        <iframe
+        <iframe title="map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21279.661971545574!2d17.1350712!3d48.1881656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2ssk!4v1682246248789!5m2!1sru!2ssk"
           width="100%"
           height="300"

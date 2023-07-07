@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header/Header";
 import { FotoBlock } from "./components/FotoBlock/FotoBlock";
@@ -9,9 +9,20 @@ import { Portfolio } from "./components/Portfolio/Portfolio";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 
+
 function App() {
+ const [a, setA] = useState(false);
+  const b = document.getElementById('preloader')
+  setTimeout(()=>{
+    setA(true)
+    a && b?.remove()
+  }, 3000)
+  
   return (
     <>
+      <div id='preloader' className={a ? 'preloaded' : ''}>
+        <div className="loader_line"></div>
+      </div>
       <div className="mobile">
         <Header />
         <div className="mobileContent">
