@@ -1,5 +1,11 @@
 import React from "react";
 import s from "./About.module.css";
+import html from "../../assets/skills/html-extension.png";
+import css from "../../assets/skills/css.png";
+import js from "../../assets/skills/javascript.png";
+import redux from "../../assets/skills/redux.png";
+import react from "../../assets/skills/react.png";
+import ts from "../../assets/skills/typescript.png";
 
 export const About = () => {
   return (
@@ -45,39 +51,45 @@ export const About = () => {
         </div>
         <div className={s.programming}>
           <div className={s.title}>
-            <h4>PROGRAMMING</h4>
+            <h4>MY SKILLS</h4>
             <div></div>
           </div>
-          <div className={s.programmingName}>
-            <div className={s.inlineProgrammingName}>
-              HTML & CSS <div>90%</div>
+          <div className={s.skills}>
+            <div className={s.programmingName}>
+              <div>
+                <img src={html} alt="#" />
+              </div>
+              <div className={s.skillName}>HTML</div>
             </div>
-            <div className={s.border}>
-              <span style={{ width: "90%" }}></span>
+            <div className={s.programmingName}>
+              <div>
+                <img src={css} alt="#" />
+              </div>
+              <div className={s.skillName}>CSS</div>
             </div>
-          </div>
-          <div className={s.programmingName}>
-            <div className={s.inlineProgrammingName}>
-              JavaScript <div>70%</div>
+            <div className={s.programmingName}>
+              <div>
+                <img src={js} alt="#" />
+              </div>
+              <div className={s.skillName}>JavaScript</div>
             </div>
-            <div className={s.border}>
-              <span style={{ width: "70%" }}></span>
+            <div className={s.programmingName}>
+              <div>
+                <img src={ts} alt="#" />
+              </div>
+              <div className={s.skillName}>TypeScript</div>
             </div>
-          </div>
-          <div className={s.programmingName}>
-            <div className={s.inlineProgrammingName}>
-              TypeScript <div>80%</div>
+            <div className={s.programmingName}>
+              <div>
+                <img src={react} alt="#" />
+              </div>
+              <div className={s.skillName}>React</div>
             </div>
-            <div className={s.border}>
-              <span style={{ width: "80%" }}></span>
-            </div>
-          </div>
-          <div className={s.programmingName}>
-            <div className={s.inlineProgrammingName}>
-              React <div>70%</div>
-            </div>
-            <div className={s.border}>
-              <span style={{ width: "70%" }}></span>
+            <div className={s.programmingName}>
+              <div>
+                <img src={redux} alt="#" />
+              </div>
+              <div className={s.skillName}>Redux Toolkit</div>
             </div>
           </div>
         </div>
@@ -90,7 +102,7 @@ export const About = () => {
             <li>
               <div className={s.listInner}>
                 <div className={s.myCircle}>
-                  <div className={s.circle + ' ' + s.num3}></div>
+                  <div className={s.circle + " " + s.num3}></div>
                   <span className={s.number}>75%</span>
                 </div>
                 <div className={s.lang}>
@@ -101,7 +113,7 @@ export const About = () => {
             <li>
               <div className={s.listInner}>
                 <div className={s.myCircle}>
-                  <div className={s.circle + ' ' + s.num1}></div>
+                  <div className={s.circle + " " + s.num1}></div>
                   <span className={s.number}>95%</span>
                 </div>
                 <div className={s.lang}>
@@ -112,7 +124,7 @@ export const About = () => {
             <li>
               <div className={s.listInner}>
                 <div className={s.myCircle}>
-                  <div className={s.circle + ' ' + s.num1}></div>
+                  <div className={s.circle + " " + s.num1}></div>
                   <span className={s.number}>95%</span>
                 </div>
                 <div className={s.lang}>
@@ -122,8 +134,8 @@ export const About = () => {
             </li>
             <li>
               <div className={s.listInner}>
-                <div className={s.myCircle} >
-                  <div className={s.circle + ' ' + s.num2}></div>
+                <div className={s.myCircle}>
+                  <div className={s.circle + " " + s.num2}></div>
                   <span className={s.number}>85%</span>
                 </div>
                 <div className={s.lang}>
