@@ -10,11 +10,11 @@ type ButtonPropsType = {
 export const Button = (props: ButtonPropsType)=> {
   const navigate = useNavigate()
   function handleClick() {
-   navigate('/portfolio/Contact')
+   navigate('/Contact')
   }
   return (
     <div className={s.button}>
-      {props.title === "Get in touch" ? <button onClick={handleClick}><NavLink to={"/portfolio/Contact"}>{props.title}</NavLink></button> 
+      {props.title === "Get in touch" ? <button onClick={handleClick}><NavLink to={"/Contact"}>{props.title}</NavLink></button> 
         : <button disabled={!props.isValid} type='submit' className={!props.isValid ? s.disable : ''}>{props.title}</button>
       }
     </div>

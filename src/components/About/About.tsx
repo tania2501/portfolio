@@ -58,10 +58,10 @@ export const About = () => {
           </div>
           <div className={s.programmingName}>
             <div className={s.inlineProgrammingName}>
-              JavaScript <div>80%</div>
+              JavaScript <div>70%</div>
             </div>
             <div className={s.border}>
-              <span style={{ width: "80%" }}></span>
+              <span style={{ width: "70%" }}></span>
             </div>
           </div>
           <div className={s.programmingName}>
@@ -74,10 +74,10 @@ export const About = () => {
           </div>
           <div className={s.programmingName}>
             <div className={s.inlineProgrammingName}>
-              React <div>80%</div>
+              React <div>70%</div>
             </div>
             <div className={s.border}>
-              <span style={{ width: "80%" }}></span>
+              <span style={{ width: "70%" }}></span>
             </div>
           </div>
         </div>
