@@ -5,6 +5,8 @@ import todo from "../../assets/img-folder/to-do-list.jpg";
 import count from "../../assets/img-folder/counter.jpg";
 import wom from "../../assets/img-folder/womaizing.jpg";
 import arr from "./../../assets/img-folder/arrow-31-32.png";
+import pro from "./../../assets/img-folder/project.jpg";
+import story from "./../../assets/img-folder/story.jpg";
 
 export const Portfolio = () => {
   return (
@@ -14,6 +16,34 @@ export const Portfolio = () => {
         <div></div>
       </div>
       <div className={s.main}>
+        <div className={s.mainItem}>
+          <div
+            className={s.item}
+            style={{ backgroundImage: `url(${pro})` }}
+          ></div>
+          <div className={s.overlay}>
+            <a href="https://student-cards.vercel.app">
+              <img src={arr} alt="#" />
+            </a>
+          </div>
+          <a href="https://student-cards.vercel.app/">
+            Student cards
+          </a>
+        </div>
+        <div className={s.mainItem}>
+          <div
+            className={s.item}
+            style={{ backgroundImage: `url(${story})` }}
+          ></div>
+          <div className={s.overlay}>
+            <a href="https://student-cards-glfz6k401-tania2501s-projects.vercel.app">
+              <img src={arr} alt="#" />
+            </a>
+          </div>
+          <a href="https://student-cards-glfz6k401-tania2501s-projects.vercel.app">
+            Student cards storybook
+          </a>
+        </div>
         <div className={s.mainItem}>
           <div
             className={s.item}
