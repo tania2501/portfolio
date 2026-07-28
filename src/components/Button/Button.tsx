@@ -14,7 +14,7 @@ export const Button = (props: ButtonPropsType)=> {
   }
   return (
     <div className={s.button}>
-      {props.title === "Get in touch" ? <button onClick={handleClick}><NavLink to={"/Contact"}>{props.title}</NavLink></button> 
+      {props.title === "Get in touch" ? <button onClick={handleClick}>{props.title}</button>
         : <button disabled={!props.isValid} type='submit' className={!props.isValid ? s.disable : ''}>{props.title}</button>
       }
     </div>
